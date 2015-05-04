@@ -1,0 +1,14 @@
+# Paulina Romo Villalobos A00570486
+
+def check_banana(p):
+    b = open(p,'m')
+    n = 0
+    for i in b:
+        m = i.lower()
+        sub = m.find('banana')
+        while sub ! = (-1):
+            n = n+1
+            sub = m.find('banana',(sub+1))
+    return(n)
+
+check_banana("C:/Users/usuario/Desktop/banana.txt")

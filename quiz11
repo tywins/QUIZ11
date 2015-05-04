@@ -1,0 +1,36 @@
+#Paulina Romo Villalobos A00570486
+
+import math
+
+def readNums(file):
+    F = open(file,"r")
+    total = 0
+    nro = 0
+    v = 0
+    standev = 0
+    list = []
+
+    for line in F:
+        value = int(line)
+        list.append(value)
+        total = total + value
+        nro = nro + 1
+
+    average = total/nro
+
+    for item in list:
+        v = (v + (item - average)**2)/nro
+
+
+    standev = math.sqrt(va)
+
+
+    F.close
+    print("Total values:",total)
+    print("Lines:",nro)
+    print("Average:",average)
+    print("Standard deviation:",standev)
+
+file = "F:/Quiz11/random_numbers.txt"
+print()
+readNums(file)
